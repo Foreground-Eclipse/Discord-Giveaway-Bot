@@ -5,9 +5,6 @@ import json
 from db.dbhandler import *
 from random import choice
 
-with open(r'./config.json', 'r') as f:
-        data = json.load(f)
-
 def getTimeoutTimestamp(hours: int) -> str:
     now_utc = datetime.now(timezone.utc)
     future_time_utc = now_utc + timedelta(hours=hours)

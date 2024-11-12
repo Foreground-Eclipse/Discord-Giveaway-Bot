@@ -2,8 +2,7 @@ import disnake
 from disnake.ext.commands import InteractionBot
 import os
 import json
-with open(r'./config.json', 'r') as f:
-        data = json.load(f)
+
 intents = disnake.Intents.all()
 bot = InteractionBot()
 
